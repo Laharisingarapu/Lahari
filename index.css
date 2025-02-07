@@ -11,7 +11,7 @@ body{
   min-height: 100vh;
 }
 header{
-    height: 60px;
+    height: 80px;
     width: 100%;
     background: black;
     color: white;
@@ -29,6 +29,7 @@ header{
 .nav-list{
     display: flex;
     list-style: none;
+    z-index: 2;
     
 }
 .nav-list li{
@@ -46,7 +47,7 @@ header{
     color: #e0e0e0;
     /* Lighter color for active/hover */
     background-color: #333;
-    /* Darker green background on hover */
+    
     border-radius: 4px;
     /* Optional: rounded corners */
   }
@@ -55,7 +56,7 @@ header{
 }
 .hero{
     width: 100%;
-    height: 500px;
+    height: 600px;
     background: url(2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -80,11 +81,13 @@ header{
 }
 .recipe-card{
     background: white;
-    margin: 30px 10px;
+    margin: 20px 10px;
     border-radius: 8px;
     border: 1px solid #ccc;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
 }
 .recipe-card img{
     width: 100%;
@@ -97,7 +100,7 @@ header{
     padding: 20px;
 }
 .recipe-card p{
-    font-size: 18px;
+    font-size: 17px;
     padding: 20px;
 }
 .recipe-card a{
@@ -108,6 +111,10 @@ header{
     color: #fff;
     padding: 15px 0;
     cursor: pointer;
+    margin-top: auto;
+    
+    
+   
 }
 .menu-toggle {
     display: none;
